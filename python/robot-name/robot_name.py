@@ -3,6 +3,8 @@ from string import ascii_uppercase as upper
 
 s_random = random.SystemRandom()
 
+# todo Check if name is unique
+
 
 class Robot(object):
     def __init__(self):

@@ -1,12 +1,12 @@
 import random
-from string import ascii_uppercase
+from string import ascii_uppercase as upper
+
+s_random = random.SystemRandom()
 
 
 class Robot(object):
     def __init__(self):
-        self.name = random.choice(ascii_uppercase) + random.choice(ascii_uppercase) + str(random.randint(100, 999))
+        self.name = s_random.choice(upper) + s_random.choice(upper) + str(s_random.randint(100, 999))
 
     def reset(self):
-        self.name = " "
         self.__init__()
-
